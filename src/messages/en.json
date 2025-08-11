@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "title": {
+      "line1": "Black,",
+      "line2": "Modern,",
+      "line3": "Simple."
+    },
+    "images": {
+      "image1": "Urban Design",
+      "image2": "Modern Architecture", 
+      "image3": "Wild Nature"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This is the about page in English."
+  },
+  "product": {
+    "title": "Product",
+    "description": "This is product page in English."
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact",
+    "login": "Log in",
+    "signup": "Start for free"
+  },
+  "specs": {
+    "title": "Here are some specifications of something",
+    "description": "This is the specs page in English.",
+    "specs1title": "Color Palette",
+    "specs1description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs2title": "Typography",
+    "specs2description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs3title": "Layout",
+    "specs3description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs4title": "Components",
+    "specs4description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs5title": "Icons",
+    "specs5description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs6title": "Animations",
+    "specs6description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs7title": "Design System",
+    "specs7description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  "iphone": {
+    "title": "Best quality",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  "prices": {
+    "title": "Create the best plans for your business",
+    "description": "This is the prices page in English.",
+    "price1title": "Gold Plan",
+    "price1description": "This is the price 1 description in English. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price1button": "Get Started",
+    "price1features": [
+      "Unlimited usage",
+      "Unlimited projects",
+      "Unlimited users"
+    ],
+    "price2title": "Platinum Plan",
+    "price2description": "This is the price 2 description in English. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "price2button": "Get a free trial",
+    "price2features": [
+      "Unlimited usage",
+      "Unlimited projects",
+      "+10 additional features"
+    ]
+  },
+  "footer": {
+    "title": "Template Startup",
+    "description": "A modern collection of components for your startup or personal project.",
+    "product": {
+      "title": "Product",
+      "features": "Features",
+      "pricing": "Pricing & Subscriptions",
+      "documentation": "Documentation"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Help",
+      "contact": "Contact",
+      "status": "Status"
+    },
+    "social": {
+      "title": "Social",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© 2024 Template Startup. All rights reserved."
+  }
+}

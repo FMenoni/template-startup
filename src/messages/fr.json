@@ -1,0 +1,95 @@
+{
+  "hero": {
+    "title": {
+      "line1": "Noir,",
+      "line2": "Moderne,",
+      "line3": "Simple."
+    },
+    "images": {
+      "image1": "Design Urbain",
+      "image2": "Architecture Moderne",
+      "image3": "Nature Sauvage"
+    }
+  },
+  "about": {
+    "title": "À Propos",
+    "description": "Ceci est la page à propos en français."
+  },
+  "product": {
+    "title": "Produit",
+    "description": "Ceci est la page produit en français."
+  },
+  "navigation": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "products": "Produits",
+    "contact": "Contact",
+    "login": "Connexion",
+    "signup": "S'inscrire gratuitement"
+  },
+  "specs": {
+    "title": "Voici quelques spécifications d'un produit",
+    "description": "Ceci est la page spécifications en français.",
+    "specs1title": "Palette de couleurs",
+    "specs1description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs2title": "Typographie",
+    "specs2description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs3title": "Mise en page",
+    "specs3description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs4title": "Composants",
+    "specs4description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs5title": "Icônes",
+    "specs5description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs6title": "Animations",
+    "specs6description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "specs7title": "Design System",
+    "specs7description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  "iphone": {
+    "title": "Meilleure qualité",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  "prices": {
+    "title": "Créez les meilleurs plans pour votre entreprise",
+    "description": "Ceci est la page prix en français.",
+    "price1title": "Plan Or",
+    "price1description": "Ceci est la description du prix 1 en français. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "price1button": "Commencer",
+    "price1features": [
+      "Usage illimité",
+      "Projets illimités",
+      "Utilisateurs illimités"
+    ],
+    "price2title": "Plan Platine",
+    "price2description": "Ceci est la description du prix 2 en français. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "price2button": "Essayer gratuitement",
+    "price2features": [
+      "Usage illimité",
+      "Projets illimités",
+      "+10 fonctionnalités supplémentaires"
+    ]
+  },
+  "footer": {
+    "title": "Template Startup",
+    "description": "Une collection moderne de composants pour votre startup ou projet personnel.",
+    "product": {
+      "title": "Produit",
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs & Abonnements",
+      "documentation": "Documentation"
+    },
+    "support": {
+      "title": "Support",
+      "help": "Aide",
+      "contact": "Contact",
+      "status": "Statut"
+    },
+    "social": {
+      "title": "Social",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn"
+    },
+    "copyright": "© 2024 Template Startup. Tous droits réservés."
+  }
+}
