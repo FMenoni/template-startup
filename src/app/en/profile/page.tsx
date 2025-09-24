@@ -1,12 +1,12 @@
 import HUD from "@/components/blocks/hud"
-import About from "@/components/pages/about"
+import Profile from "@/components/pages/profile"
 import { getMessages } from "@/lib/translations"
 
-export default function EnAbout() {
+export default function EnProfile() {
   const messages = getMessages("en")
   return (
     <HUD>
-      <About messages={messages} />
+      <Profile messages={messages} />
     </HUD>
   )
 }

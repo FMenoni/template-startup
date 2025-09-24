@@ -28,13 +28,11 @@ export default function Language() {
   }
 
   return (
-    <div className="fixed bottom-6 left-8 z-50 flex items-center">
-      <button
-        onClick={switchLocale}
-        className="text-sm hover:cursor-pointer hover:bg-neutral-400/20 hover:text-neutral-950 dark:text-white p-3 rounded-full"
-      >
-        {label}
-      </button>
-    </div>
+    <button
+      onClick={switchLocale}
+      className="text-sm pointer-events-auto hover:cursor-pointer hover:bg-neutral-400/20 hover:text-neutral-950 dark:text-white p-3 rounded-full"
+    >
+      {label}
+    </button>
   )
 }

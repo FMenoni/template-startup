@@ -13,11 +13,117 @@
   },
   "about": {
     "title": "About Us",
-    "description": "This is the about page in English."
+    "description": "This is the about page in English.",
+    "hero": {
+      "title": {
+        "line1": "Our",
+        "line2": "Story",
+        "line3": "Started Here."
+      },
+      "description": "Discover the passionate team behind our vision and the values that drive us every day.",
+      "cta1": "Learn more",
+      "cta2": "Contact us",
+      "excellence": {
+        "title": "Excellence",
+        "description": "Recognized"
+      }
+    },
+    "stats": {
+      "clients": {
+        "label": "Satisfied Clients"
+      },
+      "projects": {
+        "label": "Completed Projects"
+      },
+      "years": {
+        "label": "Years of Experience"
+      },
+      "support": {
+        "label": "Client Support"
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "description": "Passionate experts who share a common vision: creating exceptional experiences.",
+      "member1": {
+        "name": "Alexander Dubois",
+        "role": "CEO & Founder",
+        "description": "Passionate about innovation and user experience."
+      },
+      "member2": {
+        "name": "Sophie Martin",
+        "role": "Design Director",
+        "description": "Creator of designs that inspire and transform."
+      },
+      "member3": {
+        "name": "Thomas Leroy",
+        "role": "CTO",
+        "description": "Expert in cutting-edge technologies and software."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles that guide our decisions and shape our company culture.",
+      "value1": {
+        "title": "Innovation",
+        "description": "We constantly push the boundaries of creativity and technology."
+      },
+      "value2": {
+        "title": "Quality",
+        "description": "Every detail matters in our quest for excellence."
+      },
+      "value3": {
+        "title": "Collaboration",
+        "description": "We believe in the power of teamwork and diversity."
+      },
+      "value4": {
+        "title": "Impact",
+        "description": "We create solutions that change the world."
+      }
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We are committed to creating innovative solutions that transform how people interact with technology. Our goal is to make digital more accessible, intuitive, and human.",
+      "point1": "Continuous innovation and research for new solutions",
+      "point2": "Excellence in user experience",
+      "point3": "Positive impact on society and environment",
+      "point4": "Passion",
+      "point5": "Without limits"
+    },
+    "contact": {
+      "title": "Let's Talk About Your Project",
+      "description": "Ready to turn your ideas into reality? Contact us to discuss your project.",
+      "email": {
+        "title": "Email",
+        "value": "contact@templatestartup.com"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+33 1 23 45 67 89"
+      },
+      "address": {
+        "title": "Address",
+        "value": "123 Innovation Street, 75001 Paris, France"
+      },
+      "form": {
+        "title": "Send us a message",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email",
+        "message": "Your Message",
+        "submit": "Send Message"
+      }
+    },
+    "cta": {
+      "title": "Ready to Start?",
+      "description": "Join us in this adventure and let's create something extraordinary together.",
+      "primary": "Start Now",
+      "secondary": "Learn More"
+    }
   },
   "product": {
     "title": "Product",
-    "description": "This is product page in English."
+    "description": "This is the product page in English."
   },
   "navigation": {
     "home": "Home",
@@ -25,7 +131,9 @@
     "products": "Products",
     "contact": "Contact",
     "login": "Log in",
-    "signup": "Start for free"
+    "signup": "Start for free",
+    "logout": "Log out",
+    "profile": "John Doe"
   },
   "specs": {
     "title": "Here are some specifications of something",
@@ -69,6 +177,63 @@
       "+10 additional features"
     ]
   },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "submit": "Sign in",
+    "forgot": "Forgot password?",
+    "signup": "Don't have an account? Sign up",
+    "placeholder": {
+      "email": "john@doe.com",
+      "password": "********"
+    }
+  },
+  "profile": {
+    "title": "Account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "security": "Security",
+    "billing": "Billing",
+    "notifications": "Notifications",
+    "logout": "Logout",
+    "profileInformation": "Profile Information",
+    "fullName": "Full Name",
+    "phone": "Phone",
+    "saveChanges": "Save Changes",
+    "accountSettings": "Account Settings",
+    "emailNotifications": "Email notifications",
+    "smsNotifications": "SMS notifications",
+    "securitySettings": "Security Settings",
+    "currentPassword": "Current Password",
+    "newPassword": "New Password",
+    "updatePassword": "Update Password",
+    "billingInformation": "Billing Information",
+    "currentPlan": "Current Plan",
+    "upgradePlan": "Upgrade Plan",
+    "chooseYourPlan": "Choose Your Plan",
+    "freePlan": "Free Plan",
+    "goldPlan": "Gold Plan",
+    "platinumPlan": "Platinum Plan",
+    "month": "/month",
+    "billedAnnually": "Billed annually • Save 20%",
+    "foreverFree": "Forever free",
+    "perfectForGettingStarted": "Perfect for getting started",
+    "mostPopularChoice": "Most popular choice",
+    "forPowerUsersTeams": "For power users & teams",
+    "projects": "projects",
+    "basicSupport": "Basic support",
+    "unlimitedProjects": "Unlimited projects",
+    "prioritySupport": "Priority support",
+    "advancedAnalytics": "Advanced analytics",
+    "everythingInGold": "Everything in Gold",
+    "teamCollaboration": "Team collaboration",
+    "customIntegrations": "Custom integrations",
+    "confirm": "Confirm",
+    "notificationPreferences": "Notification Preferences",
+    "productUpdates": "Product updates",
+    "marketingEmails": "Marketing emails"
+  },
   "footer": {
     "title": "Template Startup",
     "description": "A modern collection of components for your startup or personal project.",
@@ -91,5 +256,41 @@
       "linkedin": "LinkedIn"
     },
     "copyright": "© 2024 Template Startup. All rights reserved."
+  },
+  "contact": {
+    "title": {
+      "line1": "Let's,",
+      "line2": "Talk,",
+      "line3": "Together."
+    },
+    "description": "Ready to start your next project? Get in touch with us and let's create something amazing together.",
+    "info": {
+      "email": {
+        "title": "Email",
+        "value": "contact@templatestartup.com"
+      },
+      "phone": {
+        "title": "Phone",
+        "value": "+33 1 23 45 67 89"
+      },
+      "address": {
+        "title": "Address",
+        "value": "123 Innovation Street, 75001 Paris, France"
+      }
+    },
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "message": "Your message",
+      "submit": "Send Message"
+    }
+  },
+  "cta": {
+    "title": "Get started now",
+    "description": "This is the cta page in English.",
+    "primary": "Get started",
+    "secondary": "Learn more"
   }
 }

@@ -1,12 +1,12 @@
 import HUD from "@/components/blocks/hud"
-import About from "@/components/pages/about"
+import Contact from "@/components/pages/contact"
 import { getMessages } from "@/lib/translations"
 
-export default function FrAbout() {
+export default function FrContact() {
   const messages = getMessages("fr")
   return (
     <HUD>
-      <About messages={messages} />
+      <Contact messages={messages} />
     </HUD>
   )
 }

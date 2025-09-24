@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         neutral: {
+          25: "#f5f5f5",
           925: "#0c0c0c",
           850: "#101010",
         },
