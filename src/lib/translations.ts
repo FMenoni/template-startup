@@ -12,6 +12,11 @@ export function getMessages(locale: Locale) {
   return messages[locale]
 }
 
-export function getNestedValue(obj: any, path: string) {
-  return path.split('.').reduce((current, key) => current?.[key], obj)
+export function getNestedValue(obj: Record<string, unknown>, path: string): unknown {
+  return path.split('.').reduce((current: unknown, key: string) => {
+    if (current && typeof current === 'object' && current !== null) {
+      return (current as Record<string, unknown>)[key];
+    }
+    return undefined;
+  }, obj as unknown);
 }

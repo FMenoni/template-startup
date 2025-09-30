@@ -4,7 +4,18 @@ import Language from "./language"
 
 interface HUDProps {
   children: React.ReactNode
-  messages?: any
+  messages?: {
+    navigation?: {
+      home?: string;
+      about?: string;
+      products?: string;
+      contact?: string;
+      login?: string;
+      signup?: string;
+      logout?: string;
+      profile?: string;
+    };
+  }
 }
 
 export default function HUD({ children, messages }: HUDProps) {

@@ -7,7 +7,18 @@ import { useState, useEffect } from "react"
 import { User } from "lucide-react"
 
 interface NavigationProps {
-  messages?: any
+  messages?: {
+    navigation?: {
+      home?: string;
+      about?: string;
+      products?: string;
+      contact?: string;
+      login?: string;
+      signup?: string;
+      logout?: string;
+      profile?: string;
+    };
+  }
 }
 
 export default function Navigation({ messages: propMessages }: NavigationProps) {

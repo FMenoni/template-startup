@@ -16,7 +16,73 @@ export default function ProductsPage() {
   useScrollPosition();
   const [activeProduct, setActiveProduct] = useState(0);
 
-  const productsMessages = messages?.products as any;
+  const productsMessages = messages?.products as {
+    hero?: {
+      badge?: string;
+      title?: string;
+      description?: string;
+      cta1?: string;
+      cta2?: string;
+    };
+    stats?: {
+      users?: { label?: string };
+      uptime?: { label?: string };
+      countries?: { label?: string };
+    };
+    products?: {
+      title?: string;
+      description?: string;
+      cta?: string;
+      learnMore?: string;
+    };
+    product1?: {
+      name?: string;
+      description?: string;
+      feature1?: string;
+      feature2?: string;
+      feature3?: string;
+    };
+    product2?: {
+      name?: string;
+      description?: string;
+      feature1?: string;
+      feature2?: string;
+      feature3?: string;
+    };
+    product3?: {
+      name?: string;
+      description?: string;
+      feature1?: string;
+      feature2?: string;
+      feature3?: string;
+    };
+    features?: {
+      title?: string;
+      description?: string;
+      feature1?: {
+        title?: string;
+        description?: string;
+      };
+      feature2?: {
+        title?: string;
+        description?: string;
+      };
+      feature3?: {
+        title?: string;
+        description?: string;
+      };
+      feature4?: {
+        title?: string;
+        description?: string;
+      };
+    };
+    cta?: {
+      title?: string;
+      description?: string;
+      primary?: string;
+      secondary?: string;
+    };
+  };
   
   const products = [
     {

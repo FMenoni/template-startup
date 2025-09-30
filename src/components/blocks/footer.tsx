@@ -1,6 +1,35 @@
 import Link from "next/link";
 
-export default function Footer({ messages }: { messages: any }) {
+export default function Footer({ messages }: { 
+  messages: {
+    footer?: {
+      title?: string;
+      description?: string;
+      copyright?: string;
+      product?: {
+        title?: string;
+        features?: string;
+        pricing?: string;
+        documentation?: string;
+        help?: string;
+        contact?: string;
+        status?: string;
+      };
+      support?: {
+        title?: string;
+        help?: string;
+        contact?: string;
+        status?: string;
+      };
+      social?: {
+        title?: string;
+        facebook?: string;
+        instagram?: string;
+        linkedin?: string;
+      };
+    };
+  }
+}) {
   return (
     <footer className="py-20 dark:bg-neutral-900">
       <div className="max-w-[1440px] mx-auto w-full px-8">
