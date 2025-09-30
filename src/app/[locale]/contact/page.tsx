@@ -6,12 +6,12 @@ import { instrumentSans } from "@/lib/primitive"
 import { IconArrowRight } from "@intentui/icons"
 import { useState } from "react"
 import Image from "next/image"
+import { getMessages } from "@/lib/translations"
+import { useParams } from "next/navigation"
 
-interface ContactProps {
-  messages?: any
-}
-
-export default function Contact({ messages }: ContactProps) {
+export default function ContactPage() {
+  const { locale } = useParams() as { locale: string }
+  const messages = getMessages(locale as 'fr' | 'en');
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [email, setEmail] = useState("")
@@ -24,7 +24,7 @@ export default function Contact({ messages }: ContactProps) {
 
   return (
     <div className="flex-1 flex items-center justify-center min-h-screen">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-6xl mx-auto px-8 pt-20">
         <div className="order-2 lg:order-1">
           <div className="relative w-full max-w-[400px]">
             <h1 className={`text-[3rem] text-neutral-950 dark:text-neutral-100 font-bold flex flex-col leading-none ${instrumentSans.className} transform -translate-y-4 mb-8`}>
@@ -97,7 +97,7 @@ export default function Contact({ messages }: ContactProps) {
           </div>
         </div>
 
-        <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+        <div className="order-1 lg:order-2 flex lg:justify-end">
           <div className="relative">
             <Image
               src="/images/hero2.jpg"
@@ -113,3 +113,4 @@ export default function Contact({ messages }: ContactProps) {
     </div>
   )
 }
+

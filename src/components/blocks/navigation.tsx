@@ -6,7 +6,11 @@ import { getMessages } from "@/lib/translations"
 import { useState, useEffect } from "react"
 import { User } from "lucide-react"
 
-export default function Navigation() {
+interface NavigationProps {
+  messages?: any
+}
+
+export default function Navigation({ messages: propMessages }: NavigationProps) {
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isConnected, setIsConnected] = useState(false)
@@ -32,8 +36,12 @@ export default function Navigation() {
     }
   }, [])
 
-  const currentLocale = pathname.startsWith("/fr") ? "fr" : "en"
-  const messages = getMessages(currentLocale)
+  // Extraire la locale depuis le pathname
+  const pathSegments = pathname.split('/').filter(Boolean)
+  const currentLocale = pathSegments[0] === 'fr' || pathSegments[0] === 'en' ? pathSegments[0] : 'fr'
+  
+  // Utiliser les messages passés en props ou fallback sur getMessages
+  const messages = propMessages || getMessages(currentLocale as 'fr' | 'en')
   const navItems = [
     { href: `/${currentLocale}`, label: messages?.navigation?.home || "Home" },
     { href: `/${currentLocale}/about`, label: messages?.navigation?.about || "About" },

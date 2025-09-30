@@ -5,16 +5,16 @@ import { IconArrowRight, IconHighlight, IconColorPalette, IconCube, IconDevices,
 import { instrumentSans } from "@/lib/primitive"
 import { TextField } from "@/components/ui/text-field"
 import { Button } from "@/components/ui/button"
-import { Checkbox } from "../ui/checkbox"
-import { Label } from "../ui/field"
-import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog"
-import { Badge } from "../ui/badge"
+import { Checkbox } from "@/components/ui/checkbox"
+import { Label } from "@/components/ui/field"
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
+import { Badge } from "@/components/ui/badge"
+import { getMessages } from "@/lib/translations"
+import { useParams } from "next/navigation"
 
-interface ProfileProps {
-  messages?: any
-}
-
-export default function Profile({ messages }: ProfileProps) {
+export default function ProfilePage() {
+  const { locale } = useParams() as { locale: string }
+  const messages = getMessages(locale as 'fr' | 'en');
   const [activeTab, setActiveTab] = useState("profile")
   const [selectedPlan, setSelectedPlan] = useState("free")
   const [currentPlan, setCurrentPlan] = useState("platinum")
@@ -30,7 +30,7 @@ export default function Profile({ messages }: ProfileProps) {
 
   const handleLogout = () => {
     localStorage.setItem('isConnected', 'false')
-    window.location.href = '/'
+    window.location.href = `/${locale}`
   }
 
   const handleConfirmPlan = () => {
@@ -39,7 +39,7 @@ export default function Profile({ messages }: ProfileProps) {
   }
 
   return (
-    <div className="flex-1 flex items-center justify-center p-6">
+    <div className="min-h-screen flex items-center justify-center p-6">
       <div className="w-full max-w-[600px] h-[380px] bg-white dark:bg-neutral-900 flex overflow-hidden">
         {/* Sidebar - 1/3 de la largeur */}
         <div className="w-1/3 dark:bg-neutral-800 border-r border-neutral-200 dark:border-neutral-700 p-4">
@@ -390,3 +390,4 @@ export default function Profile({ messages }: ProfileProps) {
     </div>
   )
 }
+

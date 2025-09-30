@@ -4,15 +4,16 @@ import Language from "./language"
 
 interface HUDProps {
   children: React.ReactNode
+  messages?: any
 }
 
-export default function HUD({ children }: HUDProps) {
+export default function HUD({ children, messages }: HUDProps) {
   return (
     <>
       <div className="fixed inset-0 pointer-events-none z-[9999]">
         {/* Navigation en haut */}
         <div className="absolute top-6 left-10 right-10 pointer-events-auto">
-          <Navigation />
+          <Navigation messages={messages} />
         </div>
         
         {/* Contrôles en bas à droite */}

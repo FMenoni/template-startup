@@ -1,12 +1,5 @@
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
-import { ThemeProvider } from "next-themes"
-import PageTransition from "@/components/ui/page-transition"
-import HUD from "@/components/blocks/hud"
-import "./globals.css"
-
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] })
+import { redirect } from "next/navigation"
 
 export const metadata: Metadata = {
   title: "Black, Modern, Simple.",
@@ -16,19 +9,8 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <HUD>
-            <PageTransition>
-              {children}
-            </PageTransition>
-          </HUD>
-        </ThemeProvider>
-      </body>
-    </html>
-  )
+  // Redirection automatique vers la locale française par défaut
+  return children
 }
 
 

@@ -22,7 +22,11 @@
       },
       "description": "Découvrez l'équipe passionnée derrière notre vision et les valeurs qui nous animent chaque jour.",
       "cta1": "En savoir plus",
-      "cta2": "Nous contacter"
+      "cta2": "Nous contacter",
+      "excellence": {
+        "title": "Excellence",
+        "description": "Reconnue"
+      }
     },
     "stats": {
       "clients": {
@@ -117,6 +121,82 @@
       "secondary": "En savoir plus"
     }
   },
+  "products": {
+    "hero": {
+      "badge": "Nouveaux produits disponibles",
+      "title": "Découvrez Nos Solutions",
+      "description": "Des produits innovants conçus pour transformer votre entreprise et accélérer votre croissance.",
+      "cta1": "Explorer les produits",
+      "cta2": "Voir la démo"
+    },
+    "stats": {
+      "users": {
+        "label": "Utilisateurs Actifs"
+      },
+      "uptime": {
+        "label": "Disponibilité"
+      },
+      "countries": {
+        "label": "Pays Desservis"
+      },
+      "support": {
+        "label": "Support Client"
+      }
+    },
+    "products": {
+      "title": "Nos Produits",
+      "description": "Découvrez notre gamme complète de solutions technologiques.",
+      "cta": "Essayer maintenant",
+      "learnMore": "En savoir plus",
+      "product1": {
+        "name": "Application Mobile",
+        "description": "Une application mobile révolutionnaire qui transforme votre façon de travailler.",
+        "feature1": "Interface intuitive",
+        "feature2": "Synchronisation cloud",
+        "feature3": "Support 24/7"
+      },
+      "product2": {
+        "name": "Plateforme Web",
+        "description": "Une plateforme web complète pour gérer tous vos projets en un seul endroit.",
+        "feature1": "Tableau de bord avancé",
+        "feature2": "API complète",
+        "feature3": "Analytics détaillées"
+      },
+      "product3": {
+        "name": "Solution Entreprise",
+        "description": "Une solution complète pour les grandes entreprises avec toutes les fonctionnalités avancées.",
+        "feature1": "Support dédié",
+        "feature2": "Intégrations personnalisées",
+        "feature3": "Formation incluse"
+      }
+    },
+    "features": {
+      "title": "Pourquoi Nous Choisir",
+      "description": "Des fonctionnalités exceptionnelles qui font la différence.",
+      "feature1": {
+        "title": "Performance",
+        "description": "Des performances exceptionnelles pour une expérience utilisateur optimale."
+      },
+      "feature2": {
+        "title": "Sécurité",
+        "description": "Protection maximale de vos données avec les dernières technologies de sécurité."
+      },
+      "feature3": {
+        "title": "Évolutivité",
+        "description": "Une architecture évolutive qui s'adapte à la croissance de votre entreprise."
+      },
+      "feature4": {
+        "title": "Support",
+        "description": "Un support client exceptionnel disponible 24h/24, 7j/7."
+      }
+    },
+    "cta": {
+      "title": "Prêt à Transformer Votre Entreprise ?",
+      "description": "Rejoignez des milliers d'entreprises qui font confiance à nos solutions.",
+      "primary": "Commencer gratuitement",
+      "secondary": "Planifier une démo"
+    }
+  },
   "product": {
     "title": "Produit",
     "description": "Ceci est la page produit en français."
@@ -174,12 +254,43 @@
     ]
   },
   "login": {
-    "title": "Connexion",
+    "title": {
+      "line1": "Connecter,",
+      "line2": "Créer,",
+      "line3": "Encore."
+    },
     "email": "Email",
     "password": "Mot de passe",
     "submit": "Se connecter",
     "forgot": "Mot de passe oublié ?",
-    "signup": "Pas de compte ? S'inscrire"
+    "noAccount": "Pas de compte ?",
+    "signup": "S'inscrire",
+    "placeholder": {
+      "email": "john@doe.com",
+      "password": "********"
+    }
+  },
+  "signup": {
+    "title": {
+      "line1": "Rejoins,",
+      "line2": "Créons,",
+      "line3": "Commençons."
+    },
+    "firstName": "Prénom",
+    "lastName": "Nom",
+    "phone": "Numéro de téléphone",
+    "email": "Email",
+    "password": "Mot de passe",
+    "signup": "S'inscrire",
+    "signIn": "Se connecter",
+    "alreadyHaveAccount": "Déjà un compte ?",
+    "placeholder": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "phone": "Numéro de téléphone",
+      "email": "Email",
+      "password": "Mot de passe"
+    }
   },
   "profile": {
     "title": "Compte",
@@ -191,6 +302,7 @@
     "logout": "Déconnexion",
     "profileInformation": "Informations du profil",
     "fullName": "Nom complet",
+    "email": "Email",
     "phone": "Téléphone",
     "saveChanges": "Sauvegarder",
     "accountSettings": "Paramètres du compte",

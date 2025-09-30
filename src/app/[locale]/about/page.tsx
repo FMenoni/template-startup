@@ -1,20 +1,25 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { IconArrowDown, IconCheck, IconHeart, IconStar, IconColorPalette, IconCube, IconDevices, IconGallery, IconMail, IconMap, IconDevicePhone } from "@intentui/icons";
 import { useScrollPosition } from "@/lib/useScrollPosition";
 import { instrumentSans } from "@/lib/primitive";
 import { Button } from "@/components/ui/button";
 import { TextField } from "@/components/ui/text-field";
 import Footer from "@/components/blocks/footer";
-import Link from "next/link";
+import { getMessages } from "@/lib/translations";
+import { useParams } from "next/navigation";
 
-interface AboutProps {
-  messages?: any;
-}
-
-export default function About({ messages }: AboutProps) {
+export default function AboutPage() {
+  const { locale } = useParams() as { locale: string }
+  const messages = getMessages(locale as 'fr' | 'en');
   useScrollPosition();
+
+  type StatKey = 'clients' | 'projects' | 'years' | 'support';
+  const statsMessages = messages?.about?.stats as
+    | Record<StatKey, { label: string }>
+    | undefined;
 
   const team = [
     {
@@ -76,7 +81,7 @@ export default function About({ messages }: AboutProps) {
     }
   ];
 
-  const stats = [
+  const stats: Array<{ number: string; key: StatKey; label: string }> = [
     {
       number: "50+",
       key: "clients",
@@ -115,10 +120,10 @@ export default function About({ messages }: AboutProps) {
                 {messages?.about?.hero?.description || "Découvrez l'équipe passionnée derrière notre vision et les valeurs qui nous animent chaque jour."}
               </p>
               <div className="flex gap-4 mt-8">
-                <Button size="lg" className="bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 hover:bg-neutral-800 dark:hover:bg-neutral-200">
+                <Button className='rounded-2xl'>
                   {messages?.about?.hero?.cta1 || "En savoir plus"}
                 </Button>
-                <Button size="lg" intent="outline" className="border-neutral-300 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 hover:bg-neutral-50 dark:hover:bg-neutral-900">
+                <Button intent="secondary" className='rounded-2xl'>
                   {messages?.about?.hero?.cta2 || "Nous contacter"}
                 </Button>
               </div>
@@ -167,7 +172,7 @@ export default function About({ messages }: AboutProps) {
                   {stat.number}
                 </div>
                 <p className="text-neutral-600 dark:text-neutral-400 text-sm md:text-base">
-                  {messages?.about?.stats?.[stat.key]?.label || stat.label}
+                  {statsMessages?.[stat.key]?.label || stat.label}
                 </p>
               </div>
             ))}
@@ -453,3 +458,4 @@ export default function About({ messages }: AboutProps) {
     </div>
   );
 }
+

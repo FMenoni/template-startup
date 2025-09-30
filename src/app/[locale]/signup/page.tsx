@@ -4,25 +4,23 @@ import { Button } from "@/components/ui/button"
 import { TextField } from "@/components/ui/text-field"
 import { instrumentSans } from "@/lib/primitive"
 import { IconArrowRight } from "@intentui/icons"
-import { usePathname } from "next/navigation"
 import { useState } from "react"
 import Link from "next/link"
+import { getMessages } from "@/lib/translations"
+import { useParams } from "next/navigation"
 
-interface SignupProps {
-  messages?: any
-}
-
-export default function Signup({ messages }: SignupProps) {
+export default function SignupPage() {
+  const { locale } = useParams() as { locale: string }
+  const messages = getMessages(locale as 'fr' | 'en');
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [phone, setPhone] = useState("")
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
-  const pathname = usePathname()
-  const currentLocale = pathname.startsWith("/fr") ? "fr" : "en"
 
   return (
-    <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-[400px]">
+    <div className="min-h-screen flex items-center justify-center -mt-42">
+      <div className="w-full max-w-[400px]">
       <div className="relative w-full max-w-[400px]">
         <h1 className={`text-[3rem] text-neutral-950 dark:text-neutral-100 font-bold flex flex-col leading-none ${instrumentSans.className} transform -translate-y-4`}>
           <span>{messages?.signup?.title?.line1 || "Join,"}</span>
@@ -75,7 +73,7 @@ export default function Signup({ messages }: SignupProps) {
 
           <div className="flex items-end gap-2 pt-2">
             <div className="flex-1" />
-            <Link href={`/${currentLocale}`}>
+            <Link href={`/${locale}`}>
               <Button className="bg-neutral-950 dark:bg-neutral-100 text-white dark:text-neutral-950 hover:bg-neutral-800 dark:hover:bg-neutral-200 h-9 p-0">
                 <span>{messages?.signup?.signup || "Sign up"}</span>
                 <IconArrowRight className="size-4 !text-white dark:!text-neutral-950" />
@@ -88,7 +86,7 @@ export default function Signup({ messages }: SignupProps) {
               {messages?.signup?.alreadyHaveAccount || "Already have an account?"}
             </span>
             <Link 
-              href={`/${currentLocale}/login`}
+              href={`/${locale}/login`}
               className="text-xs text-neutral-700 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-neutral-100 transition-colors ml-1"
             >
               {messages?.signup?.signIn || "Sign in"}
@@ -96,6 +94,8 @@ export default function Signup({ messages }: SignupProps) {
           </div>
         </div>
       </div>
+      </div>
     </div>
   )
 }
+

@@ -121,6 +121,82 @@
       "secondary": "Learn More"
     }
   },
+  "products": {
+    "hero": {
+      "badge": "New products available",
+      "title": "Discover Our Solutions",
+      "description": "Innovative products designed to transform your business and accelerate your growth.",
+      "cta1": "Explore products",
+      "cta2": "View demo"
+    },
+    "stats": {
+      "users": {
+        "label": "Active Users"
+      },
+      "uptime": {
+        "label": "Uptime"
+      },
+      "countries": {
+        "label": "Countries Served"
+      },
+      "support": {
+        "label": "Client Support"
+      }
+    },
+    "products": {
+      "title": "Our Products",
+      "description": "Discover our complete range of technological solutions.",
+      "cta": "Try now",
+      "learnMore": "Learn more",
+      "product1": {
+        "name": "Mobile Application",
+        "description": "A revolutionary mobile application that transforms the way you work.",
+        "feature1": "Intuitive interface",
+        "feature2": "Cloud synchronization",
+        "feature3": "24/7 support"
+      },
+      "product2": {
+        "name": "Web Platform",
+        "description": "A complete web platform to manage all your projects in one place.",
+        "feature1": "Advanced dashboard",
+        "feature2": "Complete API",
+        "feature3": "Detailed analytics"
+      },
+      "product3": {
+        "name": "Enterprise Solution",
+        "description": "A complete solution for large companies with all advanced features.",
+        "feature1": "Dedicated support",
+        "feature2": "Custom integrations",
+        "feature3": "Training included"
+      }
+    },
+    "features": {
+      "title": "Why Choose Us",
+      "description": "Exceptional features that make the difference.",
+      "feature1": {
+        "title": "Performance",
+        "description": "Exceptional performance for an optimal user experience."
+      },
+      "feature2": {
+        "title": "Security",
+        "description": "Maximum protection of your data with the latest security technologies."
+      },
+      "feature3": {
+        "title": "Scalability",
+        "description": "A scalable architecture that adapts to your company's growth."
+      },
+      "feature4": {
+        "title": "Support",
+        "description": "Exceptional customer support available 24/7."
+      }
+    },
+    "cta": {
+      "title": "Ready to Transform Your Business?",
+      "description": "Join thousands of companies that trust our solutions.",
+      "primary": "Start for free",
+      "secondary": "Schedule a demo"
+    }
+  },
   "product": {
     "title": "Product",
     "description": "This is the product page in English."
@@ -178,15 +254,42 @@
     ]
   },
   "login": {
-    "title": "Login",
+    "title": {
+      "line1": "Log in,",
+      "line2": "Create,",
+      "line3": "Again."
+    },
     "email": "Email",
     "password": "Password",
     "submit": "Sign in",
     "forgot": "Forgot password?",
-    "signup": "Don't have an account? Sign up",
+    "noAccount": "No account?",
+    "signup": "Sign up",
     "placeholder": {
       "email": "john@doe.com",
       "password": "********"
+    }
+  },
+  "signup": {
+    "title": {
+      "line1": "Join,",
+      "line2": "Create,",
+      "line3": "Start."
+    },
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone number",
+    "email": "Email",
+    "password": "Password",
+    "signup": "Sign up",
+    "signIn": "Sign in",
+    "alreadyHaveAccount": "Already have an account?",
+    "placeholder": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "phone": "Phone number",
+      "email": "Email",
+      "password": "Password"
     }
   },
   "profile": {
@@ -199,6 +302,7 @@
     "logout": "Logout",
     "profileInformation": "Profile Information",
     "fullName": "Full Name",
+    "email": "Email",
     "phone": "Phone",
     "saveChanges": "Save Changes",
     "accountSettings": "Account Settings",
